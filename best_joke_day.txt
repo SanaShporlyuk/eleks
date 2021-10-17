@@ -1,1 +1,2 @@
 Four engineers were riding in a car: a mechanical engineer, a chemical engineer, an electrical engineer, and a software engineer. The car breaks down.
+The mechanical engineer says "Oh no, sounds like we threw a rod, I think the valves are shot."
