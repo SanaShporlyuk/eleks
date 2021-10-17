@@ -1,3 +1,4 @@
 Four engineers were riding in a car: a mechanical engineer, a chemical engineer, an electrical engineer, and a software engineer. The car breaks down.
 The mechanical engineer says "Oh no, sounds like we threw a rod, I think the valves are shot."
 The electrical engineer says "I really think it's the points, the spark plugs just aren't firing."
+The chemical engineer replied "No I think it's the gas we bought at that last station."
