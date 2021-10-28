@@ -1,14 +1,24 @@
-// Function to convert abbreviated form
-// In this task, could you please verify covered test cases and give additional point? 
-
-abbrev_name = function (str1) {
-    var split_names = str1.trim().split(" ");
-    if (split_names.length > 1) {
-        return (split_names[0] + " " + split_names[1].charAt(0) + ".");
+/*
+Write a JavaScript function to convert a string in abbreviated
+form. console.log(abbrev (“Name Surname")) – should be
+“N.S.” (should convert lower case names to upper)
+*/
+abbrev = function (input_string) {
+    if (typeof input_string !== "string") {
+        return "";
     }
-    return split_names[0];
+    let split_names = input_string.trim().toUpperCase().split(" ");
+    let result = "";
+    for (let i = 0; i < split_names.length; i++) {
+        if (split_names[i].trim().length !==0) {
+            result += split_names[i].charAt(0) + ".";
+        }
+    }
+    return result;
 };
-console.log(abbrev_name("Robin Singh"));
-check_empty_myStr("") 
-check_empty_myStr("Hefj kjillo o998  u")
-check_empty_myStr("             ")
+console.log(abbrev("Oksana Shporlyuk super star"));
+console.log(abbrev("r"));
+console.log(abbrev(""));
+console.log(abbrev("aa b  cc   d  "));
+console.log(abbrev(12321));
+console.log(abbrev(null));

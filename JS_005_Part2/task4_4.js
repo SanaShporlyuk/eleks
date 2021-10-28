@@ -1,14 +1,18 @@
 // Function to accept two integers and display the larger
-// In this task, could you please verify covered test cases and give additional point? 
-
-abbrev_name = function (str1) {
-    var split_names = str1.trim().split(" ");
-    if (split_names.length > 1) {
-        return (split_names[0] + " " + split_names[1].charAt(0) + ".");
+let larger_num = function (a, b) {
+    if (typeof a !== "number" || typeof b !== "number") {
+        console.log(`${a}, ${b} must be numbers`);
     }
-    return split_names[0];
+
+    if (a===b) {
+        console.log(`${a} equals ${b}`);
+    } else if (a > b) {
+        console.log(`${a} is bigger than ${b}`);
+    } else {
+        console.log(`${b} is bigger than ${a}`);
+    }
 };
-console.log(abbrev_name("Robin Singh"));
-check_empty_myStr("") 
-check_empty_myStr("Hefj kjillo o998  u")
-check_empty_myStr("             ")
+larger_num(20, 89);
+larger_num(20, 0);
+larger_num(4, 4);
+larger_num(null, 4);

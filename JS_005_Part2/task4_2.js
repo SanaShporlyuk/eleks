@@ -1,14 +1,17 @@
 // Function to check a string is blank
-// In this task, could you please verify covered test cases and give additional point? 
-
-function check_empty_myStr(str1) {
-    if (str1 === "" || str1.trim().length===0) {
-        console.log("Looks like my_string is empty")
-        }
-        else{
-        console.log("Looks like my_string has something") 
-        }
+function is_string_empty(input) {
+    if (typeof input !== "string") {
+        console.log(`"${input}" is not string`);
+        return;
     }
-check_empty_myStr("") 
-check_empty_myStr("Hefj kjillo o998  u")
-check_empty_myStr("             ")
+
+    if (input.trim().length===0) {
+        console.log(`"${input}" is empty`);
+    } else {
+        console.log(`"${input}" is not empty`);
+    }
+}
+is_string_empty("");
+is_string_empty("Hefj kjillo o998  u");
+is_string_empty("             ");
+is_string_empty(1);

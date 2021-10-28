@@ -1,19 +1,22 @@
 // Write a JavaScript function to check if given string includes given symbol
-// In this task, could you please verify covered test cases and give additional point? 
 
-global.str1 =""
-
-function check (s, str1) {
-    
-    if (str1===true && str1.indexOf(s) >0) {
-
-        console.log(`The string "${str1}" has symbol " ${s}" that you are looking for`);
-    } else {
-        console.log(`You are not lucky to find "${s}" in given string`);
- 
+function contains(input_string, symbol) {
+    if (typeof input_string !== "string" || typeof symbol !== "string") {
+        console.log("not string");
+        return;
     }
+
+    if (input_string.indexOf(symbol) >= 0) {
+        console.log("found");
+    } else {
+        console.log("not found");
+    }    
 }
 
-check ('@', '')
-check ('d', 'sfh y846    wr')
-check (' ', 5689335)
+contains("hello", "h");
+contains("hello", "ll");
+contains("", "");
+contains("", "s");
+contains(123, "a");
+contains(123, 2);
+contains(null, "a");
